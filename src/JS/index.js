@@ -1,5 +1,5 @@
 import {Swiper} from "swiper";
-import {Autoplay, Navigation, Pagination, Thumbs} from "swiper/modules";
+import {Autoplay, EffectFade, Navigation, Pagination, Thumbs} from "swiper/modules";
 
 function updateCardSliders () { 
     document.querySelectorAll(".slider-notloaded").forEach(slider => {
@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (document.querySelector(".single__slider")) {
+        const sliderNavSlides = document.querySelectorAll(".single__slider-nav-slide");
+        const sliderMainVideo = document.querySelector(".single__slider-main-slide video");
 
         const singleNavSlider = new Swiper(".single__slider-nav", {
             direction: "vertical",
@@ -61,15 +63,41 @@ document.addEventListener('DOMContentLoaded', function () {
                 nextEl: ".single__slider-nav-arrow--next",
                 prevEl: ".single__slider-nav-arrow--prev",
             }
-
         });
         
         const singleMainSlider = new Swiper(".single__slider-main", {
             slidesPerView: 1,
-            modules: [Thumbs],
+            modules: [Thumbs, Pagination, EffectFade, Navigation],
+            effect: 'fade',
             thumbs: {
-                el: singleNavSlider
+                swiper: singleNavSlider
+            },
+            navigation: {
+                nextEl: ".single__slider-main-arrow--next",
+                prevEl: ".single__slider-main-arrow--prev",
+
+            },
+            pagination: {
+                el: ".single__slider-main-pag"
+            },
+            breakpoints: {
+                1220: {
+                    pagination: false
+                }
+            },
+            on: {
+                slideChange: () => {
+                    const index = singleMainSlider.realIndex;
+                    if (sliderNavSlides[index].classList.contains("single__slider-nav-slide--video")) {
+                        sliderMainVideo.play();
+                    } else {
+                        console.log('dsa');
+                        sliderMainVideo.pause();
+                    }
+                }
             }
         });
+        
+        sliderMainVideo.play();
     }
 });
