@@ -1,0 +1,236 @@
+.single {
+    padding: 57px 0 133px 0;
+    &__top {
+        display: flex;
+    }
+
+    &__top-left {
+        width: 61.23%;
+    }
+    
+    &__top-right {
+        width: 39.77%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-left: 1px solid #000;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 470px;
+    }
+
+    &__slider-left { 
+        max-width: 73px;
+        width: 13.8%;
+        padding: 28px 0;
+    }
+
+    &__slider-right {
+        margin-left: 21px;
+        width: 86.2%;
+
+    }
+
+    &__slider-nav {
+        padding: 44px 0;
+        height: 470px;
+        background-color: #f2f2f2;
+        position: relative;
+    }
+
+    &__slider-nav-slide {
+        img {
+            display: block;
+            width: 100%;
+            object-fit: scale-down;
+            height: 96px;
+            
+        }
+        &--video {}
+    }
+
+    &__slider-nav-video {
+    }
+
+    &__slider-nav-arrow {
+        position: absolute;
+        width: 100%;
+        height: 44px;
+        background-color: #f2f2f2;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s;
+        &.swiper-button-disabled {
+            opacity: .5;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        &--prev {
+            top: 0;
+            padding-bottom: 20px;
+        }
+
+        &--next {
+            padding-top: 20px;
+            bottom: 0;
+            img {
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+
+    &__slider-main {
+        height: 100%;
+        height: 470px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__slider-main-slide {
+        background-color: #fff;
+        img {
+            width: 100%;
+            object-fit: contain;
+            height: 100%;
+            display: block;
+        }
+        &--video video{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    &__slider-main-arrow {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 45px;
+        height: 100%;
+        opacity: 0;
+        transition: .3s;
+        img {
+            width: 100%;
+            height: 45px;
+        }
+        &--prev {
+            transform: rotate(-90deg);
+            left: 20px;
+        }
+
+        &--next {
+            transform: rotate(90deg);
+            right: 20px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;  
+        padding: 44px 0;
+        border-bottom: 1px solid #000;;
+    }
+
+    &__name {
+        font-size: 30px;
+        font-family: "Philosopher";
+        font-weight: 700;
+        margin-right: 8px;
+    }
+
+    &__color {
+        font-size: 27px;
+    }
+
+    &__price {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__price-list {
+        margin: 0 0 0 63px;
+        padding-left: 0;
+    }
+
+    &__price-item {
+        font-size: 27px;
+    }
+
+    &__bottom {
+        margin-top: 57px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-left {
+        width: 50%;
+    }
+
+    &__bottom-right {
+        width: 40%;
+    }
+
+    &__descr {
+    }
+
+    &__descr-title {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 800;
+        border-bottom: 1px solid #000;
+        margin-bottom: 12px;
+    }
+
+    &__descr-text {
+    }
+
+    &__characters-list {
+        width: fit-content;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 auto;
+    }
+
+    &__characters-item {
+        display: flex;
+    }
+
+    &__characters-name {
+    }
+
+    &__characters-cur {
+        margin-left: 8px;
+        font-family: "Philosopher";
+        font-weight: 700;
+    }
+}
+.container {
+}
+.row {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.signle {
+
+}

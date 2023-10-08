@@ -58,7 +58,11 @@ $color1: #ff0000;
 
 
 // Fonts
-// @include font-face('Example', '../fonts/Example/Example-Bold', 700, normal, ttf);
+@include font-face('Open Sans', '../fonts/OpenSans/OpenSans-Bold', 700, normal, ttf);
+@include font-face('Open Sans', '../fonts/OpenSans/OpenSans-ExtraBold', 800, normal, ttf);
+@include font-face('Open Sans', '../fonts/OpenSans/OpenSans-Regular', 400, normal, ttf);
+@include font-face('Philosopher', '../fonts/Philosopher/Philosopher-Regular', 400, normal, ttf);
+@include font-face('Philosopher', '../fonts/Philosopher/Philosopher-Bold', 700, normal, ttf);
 
 // Vars
 

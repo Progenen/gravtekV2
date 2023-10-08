@@ -10,9 +10,10 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Roboto;
-    font-size: 1rem;
+    font-family: Open Sansm, Arial, Helvetica, sans-serif;
+    font-size: 27px;
     font-weight: 400;
+    background: #F2F2F2;
 }
 
 body,
@@ -33,10 +34,122 @@ a {
     height: 100%;
 }
 
+.container {
+    max-width: 1149px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .content {
     flex: 1 0 auto;
 }
 
 footer {
     flex: 0 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    &__phone {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    }
+
+    &__mail {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.product-card {
+    max-width: 309px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;  
+    padding-bottom: 31px;
+    &__slider {
+        position: relative;
+        height: 296px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-wrapper {
+        position: relative;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 13px;
+        width: 100%;
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #f2f2f2;
+            margin-right: 13px;
+            transition: .3s;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        font-size: 20px;
+        color: #000;
+    }
+
+    &__cat {
+        margin-right: 5px;
+        font-weight: 800;
+        line-height: 27px;
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__price {
+        color: #735D3D;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 13px;
+    }
 }
