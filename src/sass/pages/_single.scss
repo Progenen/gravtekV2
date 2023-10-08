@@ -40,6 +40,9 @@
         height: 470px;
         background-color: #f2f2f2;
         position: relative;
+        .swiper-wrapper {
+            transition: .3s !important;
+        }
     }
 
     &__slider-nav-slide {
@@ -48,6 +51,7 @@
         justify-content: center;
         background-color: #fff;
         padding: 6px;
+        height: 96px;
         img {
             display: block;
             object-fit: scale-down;
@@ -56,6 +60,9 @@
             
         }
         &--video {}
+        &.swiper-slide-thumb-active {
+            border: 1px solid #000;
+        }
     }
 
     &__slider-nav-video {
