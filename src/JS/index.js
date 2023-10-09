@@ -162,6 +162,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 singleNavSlider.slideTo(i);
                 singleMainSlider.slideTo(i);
             })
-        })
+        });
+
+        if (window.innerWidth <= 1220) {
+            singleNavSlider.destroy();
+        }
     }
 });
