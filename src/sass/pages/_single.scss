@@ -79,6 +79,7 @@
         justify-content: center;
         cursor: pointer;
         transition: .3s;
+        user-select: none;
         &.swiper-button-disabled {
             img {
                 opacity: .5;
@@ -143,6 +144,7 @@
         height: 100%;
         opacity: 0;
         transition: .3s;
+        user-select: none;
         img {
             width: 100px;
             pointer-events: none;
