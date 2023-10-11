@@ -244,6 +244,18 @@
         }
     }
 
+    .section {
+        padding: 40px 0;
+    }
+
+    .main-title {
+        margin-bottom: 20px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
     .catalog {
         &__items {
             margin-top: 40px;
@@ -454,6 +466,19 @@
         &__characters-item {
             margin-bottom: 5px;
         }
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .main-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        font-size: 14px;
     }
 }
 
