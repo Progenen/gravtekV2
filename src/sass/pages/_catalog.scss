@@ -3,6 +3,7 @@
 
     &__video {
         max-width: 943px;
+        width: 100%;
         height: 355px;
         width: 100%;
         margin-left: auto;
@@ -10,7 +11,7 @@
         video {
             width: 100%;
             height: 100%;
-            object-fi:t cover;
+            object-fit: cover;
         }
     }
 
