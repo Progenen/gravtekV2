@@ -246,6 +246,7 @@
 
     .catalog {
         &__items {
+            margin-top: 40px;
             width: fit-content;
         }
     }
@@ -333,7 +334,13 @@
 
 @media (max-width:630px){
     .catalog {
+
+        &__video {
+            height: 250px;
+        }
+
         &__items {
+            margin-top: 20px;
             grid-template-columns: 309px;
             justify-content: center;
         }
