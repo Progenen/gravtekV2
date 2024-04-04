@@ -1,0 +1,25 @@
+.single {
+
+    &__another {
+        margin-top: 60px;
+    }
+
+    &__another-title {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    &__another-items {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width:630px){
+    .single {
+        &__another-title {
+            font-size: 26px;
+            text-align: center;
+        }
+    }
+}

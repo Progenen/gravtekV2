@@ -167,5 +167,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.innerWidth <= 1220) {
             singleNavSlider.destroy();
         }
+
+        const reviewsBtn = document.querySelector(".reviews__btn");
+        const reviewsForm = document.querySelector(".reviews__form");
+
+        reviewsBtn.addEventListener("click", () => {
+            reviewsForm.classList.toggle("active");
+        })
     }
 });
